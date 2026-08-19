@@ -36,8 +36,9 @@ jobs:
           # Generate config.yml from secrets
           cat > _data/config.yml << EOF
           name: '${{ secrets.MY_NAME }}'
-          my_url: '${{ secrets.MY_URL }}'
+          github_url: '${{ secrets.GITHUB_URL }}'
           linkedin_url: '${{ secrets.LINKEDIN_URL }}'
+          glitter_image: '/assets/images/glitter-name.gif'
           EOF
           
           echo "Config generated from secrets!"

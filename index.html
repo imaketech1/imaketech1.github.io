@@ -20,8 +20,8 @@ noindex: true
 
         <p>My name is </p>
         <span class="glitter-name">
-            <img src="https://www.gigaglitters.com/created/hprycpYexN.gif" width="267" height="67" border="0"
-                alt="IMAKETECH">
+            <img src="{{ site.data.config.glitter_image | default: '/assets/images/myname.gif' }}" alt="IMAKETECH"
+                class="myname">
         </span>
 
         <section class="about-section">
@@ -42,9 +42,12 @@ noindex: true
             </div>
         </section>
         <div class="links">
-            <a href="{{ site.data.config.my_url | default: '#' }}" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="{{ site.data.config.linkedin_url | default: '#' }}" target="_blank"
-                rel="noopener noreferrer">LinkedIn</a>
+            <a href="{{ site.data.config.github_url | default: '#' }}" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+            <a href="{{ site.data.config.linkedin_url | default: '#' }}" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
         </div>
 
     </div>
