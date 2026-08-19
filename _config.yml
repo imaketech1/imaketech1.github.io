@@ -1,5 +1,6 @@
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-remote-themetitle: imaketech
+title: IMAKETECH
 repository: imaketech1/imaketech1.github.io
 show_downloads: false

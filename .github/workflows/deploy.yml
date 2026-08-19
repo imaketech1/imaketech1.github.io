@@ -36,6 +36,7 @@ jobs:
           # Generate config.yml from secrets
           cat > _data/config.yml << EOF
           name: '${{ secrets.MY_NAME }}'
+          imaketech_url: '${{ secrets.IMAKETECH_URL }}'
           github_url: '${{ secrets.GITHUB_URL }}'
           linkedin_url: '${{ secrets.LINKEDIN_URL }}'
           glitter_image: '/assets/images/glitter-name.gif'
